@@ -1,15 +1,17 @@
-[![Python template with Github Actions](https://github.com/drktao/python-template/actions/workflows/main.yml/badge.svg)](https://github.com/drktao/python-template/actions/workflows/main.yml)
+The purpose of this project is to build a data pipeline using Databricks. The pipeline loads raw data, transforms it appropriately, and then runs two queries for data analysis on the transformed data. I used a cluster within Databricks to house my pipeline, which includes three separate notebooks (one for loading, one for transforming, and one for analysis). The dataset used in this demo contains various features of contemporary music songs, and is already included in the Databricks workspace as a sample dataset. Below, I will overview the contents of the notebooks and the relevant results.
 
-# python-template
-The purpose of this project is to make a python template for use in IDS 706 for all subsequent python-based projects. The following are the important files contained in this repo:
+The first notebook, named ingest_data, loads raw data into a table to make it available for later processing steps. 
+![Alt text](ingest.png)
 
-1. `main.yml` - Github Actions for install, test, format, and lint.
-2. `Makefile` - `make` commands for install, test, format, and lint
-3. `first.py` - python script containing a function definition
-4. `test_first.py` - python script containing tests for `first.py`
-5. `requirements.txt` - contains names of required packages for installation.
+The second notebook, named prepare_data, explicitly defines the table schema, and makes the necessary transformations to the data to prepare it for later analysis steps. 
+![Alt text](transform.png)
 
-## Instructions
-Use Github codespaces, which will allow for a container to be built with the required packages, as detailed in requirements.txt. In the terminal, use `make install` to install the necessary packages from `requirements.txt`. Use `make format` to format the code using python black and `make lint` to lint the code. Finally, use `make test` to run the test cases from `test_first.py`. One can also directly run the two python scripts in this repo using `python first.py` and `python test_first.py`. 
+Finally, the third notebook, named query_data, runs two SQL queries to analyze the data.
+![Alt text](query.png)
+
+Databricks also allows us to run the entire workflow
+![Alt text](workflow.png)
+
+
 
 
