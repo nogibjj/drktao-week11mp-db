@@ -13,6 +13,6 @@ Finally, the third notebook, named query_data, runs two SQL queries to analyze t
 Databricks also allows us to run the entire workflow.
 ![Alt text](workflow.png)
 
-
-
+I have also linked the Databricks cluster here:
+https://adb-6252625679681838.18.azuredatabricks.net/browse?o=6252625679681838
 
