@@ -10,7 +10,7 @@ Finally, the third notebook, named query_data, runs two SQL queries to analyze t
 ![Alt text](query1.png)
 ![Alt text](query2.png)
 
-Databricks also allows us to run the entire workflow
+Databricks also allows us to run the entire workflow.
 ![Alt text](workflow.png)
 
 
