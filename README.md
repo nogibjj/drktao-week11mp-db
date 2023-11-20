@@ -7,7 +7,8 @@ The second notebook, named prepare_data, explicitly defines the table schema, an
 ![Alt text](transform.png)
 
 Finally, the third notebook, named query_data, runs two SQL queries to analyze the data.
-![Alt text](query.png)
+![Alt text](query1.png)
+![Alt text](query2.png)
 
 Databricks also allows us to run the entire workflow
 ![Alt text](workflow.png)
